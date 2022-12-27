@@ -37,7 +37,6 @@ const BookSelector = ({ onChange }) => {
       onKeyDown={e => {
         e.preventDefault();
       }}
-      // isSearchable={false}
       isDisabled={isStarted ? true : false}
       defaultValue=""
       placeholder={isStarted ? '' : 'Оберіть книжку'}
@@ -46,7 +45,6 @@ const BookSelector = ({ onChange }) => {
         'У вас відсутні книги, які ви плануєте прочитати.'
       }
       onChange={book => {
-        // console.log(book);
         onChange(book.value);
       }}
       styles={customStyles}

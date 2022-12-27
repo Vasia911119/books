@@ -14,7 +14,6 @@ const GoogleAuthBtn = () => {
       <a
         href={`${BASE_URL}/users/google`}
         className="google-btn"
-        // target="_blank" rel="noreferrer"
       >
         Google
       </a>

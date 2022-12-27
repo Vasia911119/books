@@ -14,9 +14,6 @@ function DeleteButton({ onClose, _id, book }) {
   const delBook = () => {
     onClose();
     dispatch(booksOperations.deleteBook(_id));
-
-    //       dispatch(tokenAct(''));
-    //       toast.success('You are logged out.');
   };
 
   return (

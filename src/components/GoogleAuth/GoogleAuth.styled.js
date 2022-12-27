@@ -22,10 +22,6 @@ const ButtonGoogle = styled.button`
 
   margin-left: auto;
   margin-right: auto;
-  // margin-top: 40px;
-  // margin-bottom: 14px;
-  // .google-btn {
-  // display: inline-block;
   position: relative;
 
   width: 150px;
@@ -36,7 +32,6 @@ const ButtonGoogle = styled.button`
 
   & svg {
     display: inline-block;
-    // position: absolute;
     left: 14px;
     top: 9px;
   }
@@ -49,7 +44,6 @@ const ButtonGoogle = styled.button`
     line-height: 40px;
     font-family: Roboto;
   }
-  // }
 `;
 
 export default ButtonGoogle;

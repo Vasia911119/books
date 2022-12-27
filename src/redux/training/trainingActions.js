@@ -3,21 +3,11 @@ import { createAsyncThunk, createAction } from '@reduxjs/toolkit';
 
 axios.defaults.baseURL = 'https://books-api-pk0j.onrender.com/api';
 
-const token = {
-  set(token) {
-    axios.defaults.headers.common.Authorization = `Bearer ${token}`;
-  },
-  unset() {
-    axios.defaults.headers.common.Authorization = '';
-  },
-};
-
 const getCurrTraining = createAsyncThunk(
   'training/getCurrTraining',
   async (_, thunkAPI) => {
     try {
       const { data } = await axios.get('/trainings');
-      // console.log(data);
       return data;
     } catch (error) {
       thunkAPI.rejectWithValue(error);
@@ -29,7 +19,6 @@ const startTraining = createAsyncThunk(
   'training/startTraining',
   async (details, thunkAPI) => {
     try {
-      // console.log(details);
       const { startDate, endDate } = details;
       const books = details.books;
       const { data } = await axios.post('/trainings', {
@@ -37,7 +26,6 @@ const startTraining = createAsyncThunk(
         endDate,
         books,
       });
-      // console.log(data);
       return data;
     } catch (error) {
       thunkAPI.rejectWithValue(error);
@@ -50,7 +38,6 @@ const addResult = createAsyncThunk(
   async (body, thunkAPI) => {
     try {
       const { data } = await axios.patch('/trainings', body);
-      // console.log(data);
       return data;
     } catch (error) {
       thunkAPI.rejectWithValue(error);

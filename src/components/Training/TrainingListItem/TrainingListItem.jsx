@@ -1,4 +1,3 @@
-// import Icons from '../../../images/sprite/sprites.svg';
 import { ReactComponent as DeleteIcon } from '../../../images/icons/training/deleteIcon.svg';
 import {
   TrainingListItemStyled,
@@ -21,7 +20,6 @@ const TrainingListItem = ({
   year,
   pages,
   id,
-  index,
   placeholder,
   status,
 }) => {

@@ -1,4 +1,4 @@
-const RegularButton = ({ color, text }) => {
+const RegularButton = ({ text }) => {
   return <button>{text}</button>;
 };
 

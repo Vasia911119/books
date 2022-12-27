@@ -26,8 +26,7 @@ export const LibraryResumeModal = ({ closer, id }) => {
       review === null ? setBook('...') : setBook(review);
       setRate(rating);
     }
-    // setBook('');
-    // setRate(0);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const handleClick = () => {
@@ -38,8 +37,6 @@ export const LibraryResumeModal = ({ closer, id }) => {
         id: id,
       }),
     );
-    // setRate(0);
-    // setBook('');
     closer();
   };
 

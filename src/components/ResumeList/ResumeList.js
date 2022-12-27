@@ -32,11 +32,9 @@ function ResumeList() {
     open();
   };
 
-  // const { reading = [], going = [], already = [] } = useSelector(getBooks);
   const filterBook = useSelector(findBook);
   const loading = useSelector(getLoading);
   const dispatch = useDispatch();
-  // const resume = filterBook.filter(book => book.review !== null);
 
   useEffect(() => {
     dispatch(fetchBooks());

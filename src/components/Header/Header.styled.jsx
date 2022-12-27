@@ -6,8 +6,7 @@ export const TextStyled = styled.span`
   font-weight: 400;
   font-size: 20px;
   line-height: 27px;
-  color: #242a37;  
-  }
+  color: #242a37;
 `;
 
 export const Container = styled.div`

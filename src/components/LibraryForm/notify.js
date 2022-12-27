@@ -1,4 +1,4 @@
-import { ToastContainer, toast } from 'react-toastify';
+import { toast } from 'react-toastify';
 
 export const notifySuccess = values =>
   toast.success(`Книга ${values.title} добавлена!`, {

@@ -112,7 +112,6 @@ export const LiStyled = styled.li`
 `;
 
 export const SvgStyled = styled.svg`
-  // margin-top:4px
   position: absolute;
   top: 50%;
   left: 85%;

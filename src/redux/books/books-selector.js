@@ -38,24 +38,3 @@ export const findBook = createSelector(
     return sortedContacts;
   },
 );
-
-// import { createSelector } from '@reduxjs/toolkit';
-
-// export const getBooks = state => state.books.items;
-// export const getLoading = state => state.books.loading;
-// export const getError = state => state.books.error;
-// export const getFilter = state => state.books.filter;
-
-// export const findBook = createSelector(
-//   [getBooks, getFilter],
-//   (items, filter) => {
-//     const normalizedFilter = filter.toLowerCase();
-//     const fileredContacts = items.already.filter(({ title }) =>
-//       title.toLowerCase().includes(normalizedFilter),
-//     );
-//     const sortedContacts = [...fileredContacts].sort((a, b) =>
-//       a.title.localeCompare(b.title),
-//     );
-//     return sortedContacts;
-//   },
-// );

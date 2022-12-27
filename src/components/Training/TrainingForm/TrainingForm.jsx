@@ -24,7 +24,7 @@ const TrainingForm = () => {
   const start = useSelector(state => state.training.startDate);
   const end = useSelector(state => state.training.endDate);
   const isStarted = useSelector(state => state.training.isStarted);
-    const width = useWindowWidth();
+  const width = useWindowWidth();
 
   const { addBook, addDate } = trainingActions;
 
@@ -68,21 +68,17 @@ const TrainingForm = () => {
     formik.setFieldValue('book', value);
   };
 
-  const onSubmit = async (formik) => {
-    
-    // console.log(formik.values);
-                formik.values?.book?.author &&
-                  dispatch(
-                    addBook({
-                      book: formik.values.book,
-                    }),
-                  );
-                if (width < 768) {
+  const onSubmit = async formik => {
+    formik.values?.book?.author &&
+      dispatch(
+        addBook({
+          book: formik.values.book,
+        }),
+      );
+    if (width < 768) {
       notifyTrainingSuccess(formik.values);
     }
-              
-
-  }
+  };
 
   return (
     <>
@@ -119,22 +115,18 @@ const TrainingForm = () => {
               <BookSelector value={''} onChange={handleBook} />
             </SelectContainer>
             {/*  */}
-                <ToastContainer
-                  position="bottom-center"
-                  autoClose={2000}
-                  hideProgressBar={false}
-                  newestOnTop={false}
-                  closeOnClick
-                  rtl={false}
-                  pauseOnFocusLoss={false}
-                  draggable
-                  pauseOnHover={false}
-                />
-            <FormAddButton
-              type="button"
-              onClick={() => 
-               onSubmit(formik)}
-            >
+            <ToastContainer
+              position="bottom-center"
+              autoClose={2000}
+              hideProgressBar={false}
+              newestOnTop={false}
+              closeOnClick
+              rtl={false}
+              pauseOnFocusLoss={false}
+              draggable
+              pauseOnHover={false}
+            />
+            <FormAddButton type="button" onClick={() => onSubmit(formik)}>
               Додати
             </FormAddButton>
           </SelectAndButtonContainer>
@@ -142,7 +134,6 @@ const TrainingForm = () => {
           <></>
         )}
       </FormContainer>
-      {/* <TrainingList /> */}
     </>
   );
 };

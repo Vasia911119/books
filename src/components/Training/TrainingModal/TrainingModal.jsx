@@ -1,5 +1,4 @@
 import React from 'react';
-import { HiOutlineArrowNarrowLeft } from 'react-icons/hi';
 import TrainingForm from '../TrainingForm/TrainingForm';
 import { ModalBackdrop, ModalWrapper, GoBack } from './TrainingModal.styled';
 

@@ -1,5 +1,4 @@
 import React from 'react';
-import { HiPlus } from 'react-icons/hi';
 import { ModalButton, PlusIcon } from './TrainingOpenModalButton.styled';
 
 const OpenModalButton = ({ openModal }) => {

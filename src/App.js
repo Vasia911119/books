@@ -4,16 +4,12 @@ import Header from './components/Header/Header';
 import { useDispatch, useSelector } from 'react-redux';
 import './App.css';
 import { Spinner } from './components/Spinner/Spinner';
-
-import GoogleAuth from './components/GoogleAuth/GoogleAuth';
 import actions from './redux/auth/auth-actions';
 import { useWindowWidth } from '@react-hook/window-size';
-
 import TrainingPage from './pages/TrainingPage/TrainingPage';
 
 const LoginPage = lazy(() => import('./pages/LoginPage/LoginPage'));
 const RegisterPage = lazy(() => import('./pages/RegisterPage/RegisterPage'));
-
 const LibraryPage = lazy(() => import('./pages/LibraryPage/LibraryPage'));
 const ResumePage = lazy(() => import('./pages/ResumePage/ResumePage'));
 const QuotePage = lazy(() => import('./pages/QuotePage/QuotePage'));

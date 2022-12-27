@@ -1,8 +1,5 @@
 import MyGoalStyled from './MyGoal.styled';
 import { useSelector } from 'react-redux';
-import getCurrTraining from '../../redux/training/trainingActions';
-
-// console.log(trainingSelectors);
 
 const MyGoal = ({ startTraining }) => {
   const isTraining = useSelector(state => state.training.isStarted);

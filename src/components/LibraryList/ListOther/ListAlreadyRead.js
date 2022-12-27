@@ -12,7 +12,6 @@ import {
   LiNameBook,
   Button,
 } from './ListAlreadyRead.styled';
-// import ResumeButton from '../ResumeButton/ResumeButton';
 import { Outlet } from 'react-router-dom';
 import LibraryResumeModal from '../../LibraryResumeModal/LibraryResumeModal/LibraryResumeModal';
 import { useToggle } from '../../../hooks/useToggle';

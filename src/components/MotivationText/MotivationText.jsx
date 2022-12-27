@@ -20,18 +20,6 @@ function MotivationText({ onClose }) {
       }),
     );
   };
-  //   const navigate = useNavigate();
-  //     const [logout] = useLogoutMutation(token);
-
-  // const logoutUser = token => {
-  //   console.log(token);
-  //   togleModal();
-  //       logout(token);
-  //       dispatch(logAct(false));
-  //       dispatch(tokenAct(''));
-  //       toast.success('You are logged out.');
-  //       navigate('/login');
-  // };
   return (
     <Container>
       <LinkStyled>

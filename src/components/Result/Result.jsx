@@ -52,6 +52,7 @@ const Result = () => {
       togleModal();
       setOverdue(overdue => !overdue);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [bookNumber]);
 
   const statArray = [...statistics];
@@ -77,8 +78,6 @@ const Result = () => {
       >
         {({
           values,
-          errors,
-          touched,
           handleChange,
           handleBlur,
           handleSubmit,
@@ -96,7 +95,6 @@ const Result = () => {
                 <label htmlFor="title">
                   <LabelText>Дата</LabelText>
                   <DatePickerStyled
-                    // type="dateFormat"
                     name={'statisticDate'}
                     minDate={new Date(startDate)}
                     maxDate={new Date()}

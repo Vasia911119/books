@@ -33,7 +33,6 @@ export const StyledForm = styled.form`
   ul {
     max-width: 400px;
     margin: 0px auto;
-    // padding: 0 20px;
 
     @media screen and (min-width: ${breakpoints[1]}px) {
       padding: 40px;
@@ -41,13 +40,11 @@ export const StyledForm = styled.form`
 
     @media screen and (min-width: ${breakpoints[1]}px) {
       background-color: #ffffff;
-      // height: 609px;
     }
 
     label {
       display: inline-block;
       margin-bottom: 8px;
-      // float: left;
     }
 
     li {
@@ -93,7 +90,6 @@ export const StyledForm = styled.form`
       font-weight: 400;
       font-size: 14px;
       line-height: 17px;
-      // color: #a6abb9;
 
       border: none;
       background-image: none;
@@ -144,7 +140,6 @@ export const StyledForm = styled.form`
   }
 
   p {
-    // display: inline-block;
     margin: 20px auto 0;
 
     font-family: 'Montserrat';
@@ -152,7 +147,6 @@ export const StyledForm = styled.form`
     font-weight: 500;
     font-size: 13px;
     line-height: 1.23;
-    /* identical to box height */
 
     color: #898f9f;
     text-align: center;

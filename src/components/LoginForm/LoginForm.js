@@ -1,9 +1,8 @@
 import { Formik } from 'formik';
-import { useWindowWidth } from '@react-hook/window-size';
 import { useEffect } from 'react';
 import queryString from 'query-string';
 import { useDispatch } from 'react-redux';
-import { useNavigate, useLocation } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 import actions from '../../redux/auth/auth-actions';
 
 import validationSchema from '../../validation/login';
@@ -21,9 +20,7 @@ import {
 import sprite from '../../images/sprite/sprites.svg';
 
 const LoginForm = () => {
-  const width = useWindowWidth();
   const dispatch = useDispatch();
-  const navigate = useNavigate();
   const location = useLocation();
 
   sessionStorage.clear();
@@ -37,8 +34,8 @@ const LoginForm = () => {
   useEffect(() => {
     if (token && email && name) {
       dispatch(actions.loginG({ token, email, name }));
-      // navigate('/library');
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
@@ -54,16 +51,12 @@ const LoginForm = () => {
           const { email, password } = values;
 
           dispatch(actions.login({ email, password }));
-          // navigate('/library');
-          // console.log(values);
         }}
       >
         {({
           values,
           errors,
           touched,
-          isValid,
-          dirty,
           handleChange,
           handleBlur,
           handleSubmit,
@@ -131,12 +124,6 @@ const LoginForm = () => {
               </li>
 
               <ButtonStyled
-                // disabled={
-                //   (!isValid && dirty) ||
-                //   (!isValid && !dirty) ||
-                //   (Object.keys(touched).length === 0 &&
-                //     touched.constructor === Object)
-                // }
                 type="submit"
                 onClick={handleSubmit}
                 color="#FFFFFF"
@@ -170,15 +157,3 @@ const LoginForm = () => {
 };
 
 export default LoginForm;
-
-// fetch('http://localhost:3001/api/users/signup', {
-//   method: 'POST',
-//   body: JSON.stringify({
-//     name: values.name,
-//     email: values.email,
-//     password: values.password,
-//   }),
-//   headers: {
-//     'Content-Type': 'application/json',
-//   },
-// });

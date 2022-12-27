@@ -28,7 +28,6 @@ const LibraryForm = () => {
   const books = useSelector(getBooks);
   const dispatch = useDispatch();
   const width = useWindowWidth();
-  // const submit = text => dispatch(booksOperations.addBooks(text));
 
   const onSubmit = async (values, formikProps) => {
     if (

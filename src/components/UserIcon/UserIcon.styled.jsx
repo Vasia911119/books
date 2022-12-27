@@ -2,12 +2,11 @@ import styled from '@emotion/styled';
 
 export const TextStyled = styled.span`
   font-family: 'Montserrat';
-font-style: normal;
-font-weight: 600;
-font-size: 14px;
-line-height: 17px;
-color: #242A37;
-  }
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #242a37;
 `;
 
 export const UserContainer = styled.div`

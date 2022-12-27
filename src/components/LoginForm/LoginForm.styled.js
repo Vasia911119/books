@@ -2,7 +2,6 @@ import styled from '@emotion/styled';
 import backgroundImageMobile from '../../images/mobile/registerBackground.jpg';
 import backgroundImageTablet from '../../images/tablet/registerBackground.jpg';
 import backgroundImageDesktop from '../../images/desktop/registerBackground.jpg';
-import sprite from '../../images/sprite/sprites.svg';
 
 const breakpoints = [480, 768, 1280];
 
@@ -48,7 +47,6 @@ export const StyledForm = styled.form`
   ul {
     max-width: 400px;
     margin: 0px auto;
-    // padding: 0 20px;
 
     @media screen and (min-width: ${breakpoints[1]}px) {
       padding: 40px;
@@ -56,13 +54,11 @@ export const StyledForm = styled.form`
 
     @media screen and (min-width: ${breakpoints[1]}px) {
       background-color: #ffffff;
-      // height: 609px;
     }
 
     label {
       display: inline-block;
       margin-bottom: 8px;
-      // float: left;
     }
 
     li {
@@ -106,7 +102,6 @@ export const StyledForm = styled.form`
       font-weight: 400;
       font-size: 14px;
       line-height: 17px;
-      // color: #a6abb9;
 
       border: none;
       background-image: none;
@@ -143,7 +138,7 @@ export const StyledForm = styled.form`
       display: block;
 
       height: 35px;
-      
+
       @media screen and (min-width: ${breakpoints[1]}px) {
         height: 27px;
       }
@@ -154,15 +149,9 @@ export const StyledForm = styled.form`
       font-size: 14px;
       line-height: 17px;
     }
-
-    // .input__plug {
-    //   display: block;
-    //   height: 37px;
-    // }
   }
 
   p {
-    // display: inline-block;
     margin: 20px auto 0;
 
     font-family: 'Montserrat';
@@ -194,28 +183,21 @@ export const StyledP = styled.p`
 
   margin: 0 auto;
   margin-bottom: 28px;
-  // padding-top: 49px;
 
-    @media screen and (min-width: ${breakpoints[1]}px) {
-        width: 526px;
+  @media screen and (min-width: ${breakpoints[1]}px) {
+    width: 526px;
 
-        font-size: 24px;
-        line-height: 1.59;
+    font-size: 24px;
+    line-height: 1.59;
 
-        //  padding-top: 129px;
-         margin-bottom: 32px;
-      }
+    margin-bottom: 32px;
+  }
 
-    @media screen and (min-width: ${breakpoints[2]}px) {
-      font-size: 24px;
-      line-height: 40px;
-
-      // padding-top: 268px;
-      width: 397px;
-    }
-
-
-
+  @media screen and (min-width: ${breakpoints[2]}px) {
+    font-size: 24px;
+    line-height: 40px;
+    width: 397px;
+  }
 
   color: #242a37;
 
@@ -232,30 +214,25 @@ export const StyledP = styled.p`
 
     @media screen and (min-width: ${breakpoints[1]}px) {
       top: -40px;
-          height: 31px;
-    width: 31px;
-
+      height: 31px;
+      width: 31px;
     }
   }
 
-  ::after { 
+  ::after {
     content: '';
     position: absolute;
-    border: 0.5px solid #898F9F;
-    background-color: #898F9F;
+    border: 0.5px solid #898f9f;
+    background-color: #898f9f;
     border-radius: 2px;
     bottom: -16px;
     left: 50%;
     transform: translateX(-50%);
     width: 100px;
 
-        @media screen and (min-width: ${breakpoints[1]}px) {
+    @media screen and (min-width: ${breakpoints[1]}px) {
       width: 150px;
     }
-
-
-
-}
   }
 `;
 
@@ -268,13 +245,9 @@ export const SubP = styled.p`
 
   text-align: center;
 
-  // padding-bottom: 16px;
-
   @media screen and (min-width: ${breakpoints[1]}px) {
     font-size: 20px;
     line-height: 1.2;
-
-    // padding-bottom: 71px;
   }
 
   color: #898f9f;

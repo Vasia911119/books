@@ -16,7 +16,6 @@ const RegisterForm = () => {
   const width = useWindowWidth();
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  // console.log(width);
 
   return (
     <StyledDiv>
@@ -30,31 +29,16 @@ const RegisterForm = () => {
         validateOnBlur
         validationSchema={validationSchema}
         onSubmit={values => {
-          // fetch('http://localhost:3001/api/users/signup', {
-          //   method: 'POST',
-          //   body: JSON.stringify({
-          //     name: values.name,
-          //     email: values.email,
-          //     password: values.password,
-          //   }),
-          //   headers: {
-          //     'Content-Type': 'application/json',
-          //   },
-          // });
-          // console.log(values);
 
           const { name, email, password } = values;
           dispatch(actions.register({ name, email, password }));
           navigate('/login');
-          // console.log(values);
         }}
       >
         {({
           values,
           errors,
           touched,
-          isValid,
-          dirty,
           handleChange,
           handleBlur,
           handleSubmit,
@@ -180,12 +164,6 @@ const RegisterForm = () => {
                 </span>
               </li>
               <ButtonStyled
-                // disabled={
-                //   (!isValid && dirty) ||
-                //   (!isValid && !dirty) ||
-                //   (Object.keys(touched).length === 0 &&
-                //     touched.constructor === Object)
-                // }
                 type="submit"
                 onClick={handleSubmit}
                 color="#FFFFFF"

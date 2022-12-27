@@ -24,7 +24,6 @@ const DatePickerInput = ({
         }}
         disabled={isStarted ? true : false}
         onChange={date => {
-          // console.log(date);
           onChange(date);
         }}
         selected={pickedDate}

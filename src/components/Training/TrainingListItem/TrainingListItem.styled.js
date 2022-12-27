@@ -55,7 +55,6 @@ export const TrainingListItemTitle = styled.p`
   font-weight: 500;
   font-size: 14px;
   color: #242a37;
-  /* composes: field; */
   @media (max-width: 767px) {
     margin-bottom: 17px;
     min-height: 15px;
@@ -167,19 +166,3 @@ export const TrainingListItemHead = styled.span`
     display: none;
   }
 `;
-
-// export const DeleteIconStyled = styled(DeleteIcon)`
-//   /* width: 22px;
-//   height: 17px;
-//   fill: #b1b5c2;
-//   @media (max-width: 320px) {
-//     top: 25px;
-//     right: 0;
-//   }
-//   @media (min-width: 768px) {
-//     margin-left: 48px;
-//   }
-//   @media (min-width: 1280px) {
-//     margin-left: 116px;
-//   } */
-// `;

@@ -21,8 +21,8 @@ const QuotePage = () => {
   useEffect(() => {
     if (token && email && name) {
       dispatch(actions.loginG({ token, email, name }));
-      // navigate('/library');
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {

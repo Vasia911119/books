@@ -5,7 +5,6 @@ export const DivStyled = styled.div`
 `;
 
 export const Title = styled.h1`
-  /* font-family: 'Abril Fatface'; */
   font-style: normal;
   font-weight: 400;
   font-size: 34px;
@@ -23,7 +22,6 @@ export const SubTitle = styled.h2`
   font-size: 20px;
   line-height: 1.9;
 
-  
   margin-bottom: 14px;
 `;
 

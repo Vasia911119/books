@@ -13,7 +13,6 @@ import {
   TrainingWrapperStyled,
   TrainingWrapperStyledUpperPart,
   TrainingWrapperTrainingInfo,
-  TrainingWrapperStyledLowerPart,
   ResultBlock,
 } from './TrainingWrapper.styled';
 import Timers from '../Timers/Timers';
@@ -56,13 +55,6 @@ const TrainingWrapper = () => {
             />
           </>
         )}
-        {/* <MyGoal />
-        <TrainingList />
-        <TrainingOpenModalButton openModal={openModal} />
-        <TrainingModal
-          isTrainingModalShown={isTrainingModalShown}
-          setTrainingModalShown={setTrainingModalShown}
-        /> */}
       </Mobile>
       <Tablet>
         {isStarted ? (
@@ -83,9 +75,6 @@ const TrainingWrapper = () => {
             <LineChart />
           </>
         )}
-        {/* <MyGoal />
-        <TrainingForm />
-        <TrainingList /> */}
       </Tablet>
       <Desktop>
         {isStarted ? (
@@ -98,7 +87,6 @@ const TrainingWrapper = () => {
               </TrainingWrapperTrainingInfo>
               <MyGoal />
             </TrainingWrapperStyledUpperPart>
-            {/* <MyGoal />   */}
             <ResultBlock>
               <LineChart />
               <Result />
@@ -114,41 +102,15 @@ const TrainingWrapper = () => {
               </TrainingWrapperTrainingInfo>
               <MyGoal />
             </TrainingWrapperStyledUpperPart>
-            {/* <MyGoal />   */}
 
             <ResultBlock>
               <LineChart />
             </ResultBlock>
           </>
         )}
-        {/* <TrainingWrapperStyledUpperPart>
-          <TrainingWrapperTrainingInfo>
-            <TrainingForm />
-            <TrainingList />
-          </TrainingWrapperTrainingInfo>
-
-          <MyGoal />
-        </TrainingWrapperStyledUpperPart> */}
       </Desktop>
-      {/* 
-      <ResultBlock>
-        <StartTrainingBtn />
-        <LineChart />
-        {isStarted ? <Result /> : <></>}
-      </ResultBlock> */}
     </TrainingWrapperStyled>
   );
 };
 
 export default TrainingWrapper;
-
-// <LineChart
-//   startDate={'2022-06-08T00:00:00.000Z'}
-//   endDate={'2022-06-13T00:00:00.000Z'}
-//   totalPages={600}
-//   readedPages={200}
-//   statistics={[
-//     { statisticDate: '2022-06-09T00:00:00.000Z', statisticResult: 100 },
-//     { statisticDate: '2022-06-10T00:00:00.000Z', statisticResult: 100 },
-//   ]}
-// />;

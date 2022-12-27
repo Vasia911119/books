@@ -1,7 +1,6 @@
 import styled from '@emotion/styled';
 
 const MyGoalStyled = styled.div`
-  /* width: 270px; */
   height: 270px;
   background-color: #ffffff;
   box-shadow: 0px 2px 3px rgba(9, 30, 63, 0.1);
@@ -12,7 +11,6 @@ const MyGoalStyled = styled.div`
     align-items: flex-start;
     margin-top: 30px;
     height: 125px;
-    /* width: 678px; */
     margin-bottom: 28px;
     padding: 11px 45px 11px 45px;
     display: flex;

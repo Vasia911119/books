@@ -1,9 +1,4 @@
-import {
-  configureStore,
-  getDefaultMiddleware,
-  createReducer,
-  combineReducers,
-} from '@reduxjs/toolkit';
+import { createReducer } from '@reduxjs/toolkit';
 
 import actions from './auth-actions';
 
@@ -19,8 +14,6 @@ const initialState = {
 const authReducer = createReducer(initialState, {
   [register.fulfilled]: (state, { payload }) => ({
     ...state,
-    // isLoggedIn: true,
-    // token: payload.token,
     user: payload.ResponseBody.user,
   }),
   [register.rejected]: (_, { payload }) => {
@@ -60,7 +53,6 @@ const authReducer = createReducer(initialState, {
   [fetchCurrentUser.fulfilled]: (state, { payload }) => ({
     ...state,
     isLoggedIn: payload ? true : false,
-    // isLoggedIn: true,
     user: payload,
     isPageRefreshing: false,
   }),

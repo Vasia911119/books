@@ -15,12 +15,8 @@ export const Section = styled.section`
     min-width: 320px;
   }
   @media (min-width: ${bp[1]}px) {
-    // min-width: 768px;
     padding: 179px 0 239px;
   }
-  // @media (min-width: ${bp[2]}px) {
-  //   min-width: 1280px;
-  // } ;
 `;
 
 export const Container = styled.div`
@@ -28,14 +24,9 @@ export const Container = styled.div`
   max-width: 270px;
 
   @media (min-width: ${bp[1]}px) {
-    // width: 768px;
-    // margin: 0 auto;
     max-width: 477px;
     margin: 0 auto;
   }
-  // @media (min-width: ${bp[2]}px) {
-  //   width: 1280px;
-  // } ;
 `;
 
 export const Title = styled.h1`
