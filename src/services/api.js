@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { createAsyncThunk, createAction } from '@reduxjs/toolkit';
 
-axios.defaults.baseURL = 'https://project-books-api.herokuapp.com/api';
+axios.defaults.baseURL = 'https://books-api-pk0j.onrender.com/api';
 
 const setToken = token =>
   (axios.defaults.headers.common.Authorization = `Bearer ${token}`);
